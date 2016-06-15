@@ -1,0 +1,23 @@
+<form role="form" ng-init="blog.newBlog()" >
+  <div class="form-group">
+    <label for="titulo">Titulo:</label>
+    <input type="text" class="form-control" id="titulo" ng-model="blog.blog.titulo" />
+  </div>
+  <div class="form-group">
+    <label for="resumen">Resumen:</label>
+    <input type="text" class="form-control" id="resumen"  ng-model="blog.blog.resumen">
+  </div>
+  <div class="form-group">
+    <label for="categoria">Categoria:</label>
+    <select name="categoria"  class="form-control"   ng-model="blog.blog.categoria"   >
+    	<option ng-select="{{  categoria.id == blog.blog.categoria }}" ng-repeat="categoria in blog.categoriasBlog"  value="{{ categoria._id }}" >{{ categoria.nombre }}  </option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="contenido">Contenido:</label>
+    <trix-editor angular-trix class="form-control" ng-model="blog.blog.contenido"></trix-editor>
+  </div>
+
+  <button type="submit" class="btn btn-default"  ng-click="blog.crear();" >Crear</button>
+</form>

@@ -1,0 +1,69 @@
+
+
+
+<ol class="breadcrumb">
+  <li><a href="#/">Home</a></li>
+  <li><a href="#/{{ blog.home }}">Blog</a></li>
+  <li class="active">Editar</li>
+</ol>
+
+<h3>Actualizar registro</h3>
+
+
+ 
+<form role="form" ng-init="blog.cargarBlog()" enctype="multipart/form-data" ng-cloak >
+
+<div class="panel panel-default panel-card">
+  <div class="form-group">
+    <label for="titulo">Titulo:</label>
+    <input type="text" class="form-control" id="titulo" ng-model="blog.blog.titulo" />
+  </div>
+  <div class="form-group">
+    <label for="resumen">Resumen:</label>
+    <input type="text" class="form-control" id="resumen"  ng-model="blog.blog.resumen">
+  </div>
+  <div class="form-group">
+    <label for="categoria">Categoria:</label>
+    <select name="categoria"  class="form-control"   ng-model="blog.blog.categoria"   >
+    	<option ng-select="{{  categoria.id == blog.blog.categoria }}" ng-repeat="categoria in blog.categoriasBlog"  value="{{ categoria._id }}" >{{ categoria.nombre }}  </option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="contenido">Contenido:</label>
+    
+    <wysiwyg  textarea-class="form-control"  textarea-height="180px"  ng-model="blog.blog.contenido" ></wysiwyg>
+
+  </div>
+
+
+
+
+  <div flow-init="{target: '/api/blog/file/upload' , testChunks: false }"
+  flow-name="uploader.flow"
+  flow-file-added="!!{png:1,gif:1,jpg:1,jpeg:1}[$file.getExtension()]"
+  flow-files-added="processFiles($files)">
+
+  <button flow-btn type="file" class=" btn btn-default"  flow-attrs="{accept:'image/*'}" >
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    Agregar imagen </button>
+
+    <div class="row">
+      <div ng-repeat="imagen in blog.blog.imagenes track by $index" class="thumbnail col-md-3" >
+        <img class="preview"  ng-src="uploads/{{  imagen }}" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div ng-repeat="image in uploader.flow.files track by $index" class="thumbnail col-md-3" >
+        <img class="preview" flow-img="image"/>
+      </div>
+    </div>
+
+  </div>
+
+ </div>
+
+  <button type="submit" class="btn btn-success"  ng-click="blog.actualizar();" >Editar</button>
+  <button type="submit" class="btn btn-danger"  ng-click="blog.eliminar();" >Eliminar</button>
+</form>

@@ -1,0 +1,532 @@
+/*fuentes*/
+
+@font-face {
+  font-family: bodoni;
+  font-style: italic;
+  src: url("../assets/fonts/bodoni/BauerBodoniStd-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: bodoni;
+  font-weight: bold;
+  font-style: italic;
+  src: url("../assets/fonts/bodoni/BauerBodoniStd-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: bodoni;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../assets/fonts/bodoni/BauerBodoniStd-Roman.otf") format("opentype");
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/*splash*/
+
+body > .inner {
+  display: none;
+}
+
+body.pg-loaded > .inner {
+  display: block;
+}
+
+
+
+/*menu*/
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: white;
+  text-decoration: underline;
+}
+
+.titulo-listado{
+  font-weight: bold;
+  font-size: 15px;
+  font-family: lato;
+  list-style: none;
+  text-transform: uppercase;
+}
+/*banner*/
+
+
+.lista_home > li {
+ font-family: "Lato",sans-serif;
+ font-weight: 100;
+}
+
+.titular{
+  font-family: bodoni;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.banner-row{
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner-row > img{
+  width: 100%; 
+}
+
+
+
+
+.boton-negro{
+  background-color: black;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  border-radius: 0px;
+  border: 0px;
+}
+
+div.navbar{
+  background-color: black; 
+}
+
+ul.nav > li > a{
+  font-family: 'Lato', sans-serif;
+  color: white; 
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default {
+  border: 0 none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+
+
+/*asesoria home */
+
+.asesoria{
+  background-color: white;
+}
+
+.titulo-asesoria , .subtitulo-asesoria{
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-family: bodoni;
+  letter-spacing: 2.5px;  
+  margin:0px;
+}
+
+.titulo-asesoria{
+  color: black;
+  font-size: 30px;
+  margin-top: 100px;
+}
+.subtitulo-asesoria{
+  color: #ff4d58;
+  margin-left: 40px;
+  font-size: 60px;
+}
+
+.contenido-asesoria{
+ font-family: 'Lato', sans-serif;
+ font-weight: lighter;
+ color: black;
+ width: 100%;
+ text-align: left;
+}
+
+
+
+
+
+
+/*cosmetologia home */
+.cosmetologia{
+  background-color: rgb(231,232,226); 
+}
+
+
+.titulo-cosmetologia , .subtitulo-cosmetologia{
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-family: bodoni;
+  letter-spacing: 2.5px;  
+  margin:0px;
+}
+
+.titulo-cosmetologia{
+  color: black;
+  font-size: 30px;
+  margin-top: 100px;
+}
+.subtitulo-cosmetologia{
+  color: #0cbdb1;
+  margin-left: 40px;
+  font-size: 60px;
+}
+
+.contenido-cosmetologia{
+ font-family: 'Lato', sans-serif;
+ font-weight: lighter;
+ color: black;
+ width: 50%;
+ text-align: left;
+}
+
+
+
+
+/*incripciones*/
+
+
+.inscripciones{
+  background-color: #f3d057;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.inscripciones > h3{
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-family: bodoni;
+  letter-spacing: 2.5px;  
+  text-transform: uppercase;
+}
+
+p{
+  text-align: center;
+}
+
+.inscripcion-subtitulo{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+
+label{
+  font-family: 'Lato', sans-serif;
+  color: black; 
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.enviar{
+  background-color: black;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 400;
+
+}
+
+.form-text{
+  border-radius: 0px;
+}
+
+
+
+
+/*footer*/
+
+.footer{
+  font-family: arial;
+  background-color: black; 
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.info-titular{
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: bodoni;
+  letter-spacing: 2.5px;  
+}
+
+.info-contenido{
+ color: white;
+ font-family: 'Lato', sans-serif;
+ font-weight: lighter;
+ text-align: left; 
+}
+
+
+.social-list > li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.social-list{
+  padding-left: 0px;
+  padding-top: 10px;
+}
+
+
+
+/*conocenos*/
+
+.conocenos{
+ background-color: black; 
+ margin-bottom: 40px;
+}
+
+.titulo-conocenos{
+  color: #ff4d58;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  font-family: bodoni;
+  letter-spacing: 2.5px;  
+  font-size: 35px;
+}
+
+
+.contenido-conocenos{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+.mision_vision{
+  background-image: url(../assets/imagenes/conocenos/fondo_mision_vision.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.equipo-trabajo{
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+
+.isabel_chavez{
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+
+
+/*contactenos*/
+.contactenos-titulo{
+  color: #f2be3a;
+  text-align: center;
+  font-family: bodoni;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.contactenos{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.formulario{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.formulario_input  {
+  background-color: #dbdbdb; 
+}
+
+
+
+
+
+/*servicios*/
+
+.servicios{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.lista-servicios{
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding-left: 0px;
+}
+
+.titulo-servicio{
+  color: black;
+  font-family: bodoni;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 4px solid #f2be3a;
+}
+
+.categoria , .subcategoria{
+  font-family: lato;
+  list-style: none;
+}
+
+.categoria{
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.subcategoria{
+  font-weight: lighter;
+  color: black;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.subcategoria.selected{
+  color: #f2be3a;
+
+}
+
+.titulo-categoria{
+  color: black;
+  font-family: bodoni;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.contenido-servicio{
+  font-family: lato;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.imagen-servicio{
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+
+/*blog*/
+.imagen-blog{
+  margin: 5px;
+  margin-left: 0px;
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.categorias_blog{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.categorias_blog > li{
+  display: inline-block;
+  list-style: none;
+  font-family: lato;
+  color: black;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+
+
+
+
+
+.grid {
+    border: 1px solid #cccccc;
+    list-style: none;
+    background: #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing : border-box;
+    -webkit-transition: all 0.6s ease-out; 
+    transition: all 0.6s ease-out; 
+}
+.grid-img {
+    width: 100%;
+    vertical-align: middle;
+    -webkit-transition: opacity 0.6s ease-out;  
+    transition: opacity 0.6s ease-out;
+    background-color: #fff;
+    opacity: 0; 
+    visibility: hidden;
+    padding: 10px;
+}
+ 
+.grid-img.img-loaded{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.dynamic-grid {
+  position: relative;
+  display: none;
+}
+.dynamic-grid.angular-grid {
+  display: block;
+}
+.grid {
+  position: absolute;
+  list-style: none;
+  background: #ffffff;;
+  box-sizing: border-box;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  overflow: hidden;
+  border-radius: 0px;
+}
+.grid.ng-leave {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+}
+.grid.ng-leave.ng-leave-active {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+}
+.grid.ng-enter {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+  -webkit-transition-delay: 500ms;
+  transition-delay: 500ms;
+  -webkit-transform: scale(0.5);
+   transform: scale(0.5);
+  opacity: 0;
+}
+.grid.ng-enter.ng-enter-active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.grid-img {
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+.grid-img.img-loaded {
+  visibility: visible;
+  opacity: 1;
+}
+
+

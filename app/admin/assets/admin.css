@@ -1,0 +1,83 @@
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    color: white;
+    font-weight: 300; 
+    text-transform: capitalize;
+  }
+
+  .sidebar-nav .navbar li a  > i {
+    padding-right: 20px;
+  }
+
+
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+label{
+  font-weight: 500;
+  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+input{
+  border-radius: 0px 0px 0px 0px ;
+}
+
+.form-control{
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.panel-card{
+  padding: 20px;
+  border-radius: 0px;
+  background-color: rgb(245,245,245);
+}
+
+h3{
+  margin-top: 0px;
+}
+
+
+
+
+/*theming*/
+.navbar-nav{
+background-color: rgb(29,43,58); 
+}
+
+
+.navbar-nav > li >  a , .navbar-nav > li {
+  color: white; 
+}
+
+
+
+
+
+
+
+
