@@ -64,6 +64,11 @@ angular
         controller: 'CategoriaCtrl',
         controllerAs: 'categoria'
       })
+      .when('/categoria/:post', {
+        templateUrl: 'views/ver.html',
+        controller: 'VerCtrl',
+        controllerAs: 'post'
+      })
 
       .otherwise({
         redirectTo: '/'

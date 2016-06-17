@@ -530,3 +530,19 @@ label{
 }
 
 
+.contenido_blog{
+  font-family: lato;
+  color: #333333;
+}
+
+
+.contenido_blog > p{
+  text-align: justify;
+}
+
+
+
+
+
+
+

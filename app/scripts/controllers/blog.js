@@ -13,8 +13,8 @@
     $http.defaults.useXDomain = true;
 
     $scope.$on('$viewContentLoaded', function(){
-        console.log('cargado');
-        loading_screen.finish(); 
+        // console.log('cargado');
+        // loading_screen.finish(); 
     });
 
 

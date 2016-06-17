@@ -29,7 +29,7 @@
 
       <!-- Add your site or application content here -->
 
-      <div class="container-fluid"  style="background-color: rgb(245, 245, 245)" >
+      <div class="container-fluid"  style="background-color: rgb(245, 245, 245); padding-left: 0px; padding-right: 0px;" >
         <div ng-view=""></div>
       </div>
 
@@ -118,11 +118,12 @@
 
 
      <script type="text/javascript">
-      window.loading_screen = window.pleaseWait({
-        logo: "images/logo.png",
-        backgroundColor: '#000000',
-        loadingHtml: "<div class='sk-spinner sk-spinner-wave'><div class='sk-rect1'></div><div class='sk-rect2'></div><div class='sk-rect3'></div><div class='sk-rect4'></div><div class='sk-rect5'></div></div>"
-      });
+     
+      // window.loading_screen = window.pleaseWait({
+      //   logo: "images/logo.png",
+      //   backgroundColor: '#000000',
+      //   loadingHtml: "<div class='sk-spinner sk-spinner-wave'><div class='sk-rect1'></div><div class='sk-rect2'></div><div class='sk-rect3'></div><div class='sk-rect4'></div><div class='sk-rect5'></div></div>"
+      // });
     </script>
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -138,6 +139,7 @@
     <script src="scripts/services/blog.js"></script>
     <script src="scripts/controllers/menu.js"></script>
     <script src="scripts/controllers/categoria.js"></script>
+    <script src="scripts/controllers/ver.js"></script>
     <!-- endbuild -->
 
 

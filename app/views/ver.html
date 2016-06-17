@@ -24,41 +24,42 @@
 		</div>
 	</div>
 </div>
-
+<!-- 
 <div class="container-fluid">
 	<div class="row ">
 		<div class="col-md-12 banner-row">
 			<img class="img-responsive" src="assets/imagenes/blog/blog_banner.jpg" />
 		</div>
 	</div>
-</div>
+</div> -->
 <div class="row">
+
 	<div class="col-md-10 col-md-offset-1">
 		<ul class="categorias_blog" >
-			<li>
-				Todas
-			</li>
-			<li ng-repeat="cat in categorias" >
-				<a href="#/{{ cat.url }}"> {{ cat.nombre }} </a> 
-			</li>
+		<li style="color:#999999;" >Blog ></li>
+		<li style="color:#999999;" >{{ noticia.categoria.nombre }} > </li>
+		<li  style="color: #f2be3a;" >{{ noticia.titulo }}</li>
+
 		</ul>
 	</div>
-</div>
 
 
-
-
-<div class="row">
 	<div class="col-md-10 col-md-offset-1">
-		<ul class="dynamic-grid" angular-grid="noticias" ag-grid-width="300" ag-gutter-size="20" ag-angular-grid-id="gallery" ag-refresh-on-img-load="false" >
-			<li data-ng-repeat="pic in noticias" class="grid"    style="cursor: pointer;" >
-			<a href="#/categoria/{{  pic.id }}">
-				<img src="http://127.0.0.1/AdminICH/web/images/blog/{{pic.imagenes[0].image_name }}" class="grid-img"   />
-				</a>
-				<div fb-like></div>
-				<div tweet="pic.titulo"></div>
-			</li>
+		<ul class="categorias_blog" >
+		<h2  class="info-titular" style="text-align: left;" > {{ noticia.titulo}} </h2>
+
 		</ul>
 	</div>
+
+	<div class="col-md-10 col-md-offset-1">
+		<img  style="margin: 0 auto;" class="img-responsive" src="http://127.0.0.1/AdminICH/web/images/blog/{{noticia.imagenes[0].image_name }}" />
+	</div>
+	<div class="col-md-10 col-md-offset-1">
+	<br>
+	<br>
+	<br>
+	<div class="contenido_blog" ng-bind-html="noticia.contenido"></div>
+
 	
+	</div>
 </div>
