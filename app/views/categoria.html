@@ -29,7 +29,7 @@
 	<div class="col-md-10 col-md-offset-1">
 		<ul class="categorias_blog" >
 			<li>
-				Todas
+				{{  categoria.nombre }}
 			</li>
 			
 		</ul>
@@ -42,10 +42,16 @@
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<ul class="dynamic-grid" angular-grid="noticias" ag-grid-width="300" ag-gutter-size="20" ag-angular-grid-id="gallery" ag-refresh-on-img-load="false" >
-			<li data-ng-repeat="pic in noticias" class="grid">
+			<li data-ng-repeat="pic in noticias" class="grid"    style="cursor: pointer;" >
+			<a href="#/categoria/{{  pic.id }}">
 				<img src="http://127.0.0.1/AdminICH/web/images/blog/{{pic.imagenes[0].image_name }}" class="grid-img"   />
+				</a>
+				<a  class="titulo_noticia" href="#/categoria/{{  pic.id }}" >{{ pic.categoria.nombre }}</a>
+				 <p class="titulo_noticia" > <a href="#/categoria/{{  pic.id }}" >{{ pic.titulo }}</a></p>
 			</li>
 		</ul>
 	</div>
-	
 </div>
+
+
+

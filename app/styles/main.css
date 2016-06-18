@@ -452,28 +452,28 @@ label{
 
 
 .grid {
-    border: 1px solid #cccccc;
-    list-style: none;
-    background: #ffffff;
-    box-sizing: border-box;
-    -moz-box-sizing : border-box;
-    -webkit-transition: all 0.6s ease-out; 
-    transition: all 0.6s ease-out; 
+  border: 1px solid #cccccc;
+  list-style: none;
+  background: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing : border-box;
+  -webkit-transition: all 0.6s ease-out; 
+  transition: all 0.6s ease-out; 
 }
 .grid-img {
-    width: 100%;
-    vertical-align: middle;
-    -webkit-transition: opacity 0.6s ease-out;  
-    transition: opacity 0.6s ease-out;
-    background-color: #fff;
-    opacity: 0; 
-    visibility: hidden;
-    padding: 10px;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-transition: opacity 0.6s ease-out;  
+  transition: opacity 0.6s ease-out;
+  background-color: #fff;
+  opacity: 0; 
+  visibility: hidden;
+  padding: 10px;
 }
- 
+
 .grid-img.img-loaded{
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -509,7 +509,7 @@ label{
   -webkit-transition-delay: 500ms;
   transition-delay: 500ms;
   -webkit-transform: scale(0.5);
-   transform: scale(0.5);
+  transform: scale(0.5);
   opacity: 0;
 }
 .grid.ng-enter.ng-enter-active {
@@ -541,6 +541,19 @@ label{
 }
 
 
+.titulo_noticia{
+  font-family: lato;
+  color: #333333;
+  text-align: left;
+  padding: 10px;
+  color: black;
+}
+
+
+.titulo_noticia > a{
+  
+  color: black;
+}
 
 
 

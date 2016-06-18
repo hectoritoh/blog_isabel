@@ -55,8 +55,8 @@
 			<a href="#/categoria/{{  pic.id }}">
 				<img src="http://127.0.0.1/AdminICH/web/images/blog/{{pic.imagenes[0].image_name }}" class="grid-img"   />
 				</a>
-				<div fb-like></div>
-				<div tweet="pic.titulo"></div>
+				<a  class="titulo_noticia" href="#/categoria/{{  pic.id }}" >{{ pic.categoria.nombre }}</a>
+				 <p class="titulo_noticia" > <a href="#/categoria/{{  pic.id }}" >{{ pic.titulo }}</a></p>
 			</li>
 		</ul>
 	</div>

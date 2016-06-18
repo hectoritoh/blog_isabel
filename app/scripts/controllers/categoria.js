@@ -19,6 +19,7 @@ angular.module('isabelApp')
 
 
     $scope.categorias = [];
+    $scope.categoria  = [];
     $scope.noticias   = [];
     $scope.selectedCategoria = "Home"
 
@@ -26,6 +27,15 @@ angular.module('isabelApp')
  $http.get('http://127.0.0.1/AdminICH/web/app_dev.php/api/categorias').
     success(function(data, status, headers, config) {
         $scope.categorias = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+
+
+ $http.get('http://127.0.0.1/AdminICH/web/app_dev.php/api/categoria/' + $routeParams.categoria ).
+    success(function(data, status, headers, config) {
+        $scope.categoria = data;
     }).
     error(function(data, status, headers, config) {
       // log error
